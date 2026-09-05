@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "dup‑reg‑guard",
+  "version": "${version}",
+  "name": "Dup Reg Guard",
+  "description": "Prevent duplicate ResourceReloader registration after crash recovery. Static & instance support, per‑ResourceType check.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.dupregguard.DupRegGuardMod"]
+  },
+  "mixins": [
+    "dup‑reg‑guard.mixins.json"
+  ],
+  "depends": {
+    "fabric-loader": ">=0.18.4"
+  }
+}
+
