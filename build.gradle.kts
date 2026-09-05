@@ -1,5 +1,5 @@
 plugins {
-    id("fabric-loom") version "1.12-SNAPSHOT"
+    id("fabric-loom") version "1.12"
 }
 
 base {
@@ -14,10 +14,10 @@ repositories {
 }
 
 dependencies {
-    minecraft("com.mojang:minecraft:26.1.2")
+    minecraft("com.mojang:minecraft:1.20.1")
     mappings(loom.officialMojangMappings())
     modImplementation("net.fabricmc:fabric-loader:0.18.4")
-    modImplementation("net.fabricmc.fabric-api:fabric-api:0.155.2+26.1.2")
+    modImplementation("net.fabricmc.fabric-api:fabric-api:0.92.12+26.1.2")
 }
 
 tasks.processResources {
@@ -28,7 +28,7 @@ tasks.processResources {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_25
-    targetCompatibility = JavaVersion.VERSION_25
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
     withSourcesJar()
 }
